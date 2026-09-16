@@ -1,14 +1,14 @@
 ﻿@model StudentsMVC.Models.Student
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Деталі";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Деталі</h1>
 
 <div>
-    <h4>Student</h4>
+    <h4>Студент</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -37,7 +37,7 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Редагувати</a>
+    <a asp-action="Index" class="btn btn-secondary ms-2">Повернутися до списку</a>
 </div>
